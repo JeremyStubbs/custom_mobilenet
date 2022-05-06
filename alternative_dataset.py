@@ -1,3 +1,5 @@
+##This is another way to create a training dataset 
+
 import tensorflow as tf
 import cv2
 
