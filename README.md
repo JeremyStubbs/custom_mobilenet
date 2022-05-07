@@ -4,6 +4,8 @@ create_model.ipynb walks through training the model from scratch.
 
 Load_model.ipynb allows you to load the pretrained model for immediate use. 
 
+The directory saved_model contains the pretrained model for clothes. 
+
 Localization.ipynb attempts to use heat maps to localize the recognized object. The sources for this are https://alexisbcook.github.io/2017/global-average-pooling-layers-for-object-localization/ and http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf. The benefit of this is you don't need bounding boxes for training.
 
 To generate a bounding box from the heat map, you to create a binary map from the color map array called "final_arr" (they used a value of 20% of max value).Then take the bounding box that covers the largest connected component in the segmentation map. 
@@ -13,4 +15,4 @@ The clothes images were taken from https://www.kaggle.com/datasets/agrigorev/clo
 2) One could gather pictures of people in various articles of clothing and create tf records in which one picture could be trained for multiple classes simulataneously. This would force the model to recognize boundaries between the articles of clothing.
 Ultimately, 3D vision is necessary to highly accurately identify an article of clothes as a folded plane.
 
-The ASL images source is https://www.kaggle.com/datasets/grassknoted/asl-alphabet
+The ASL images source is https://www.kaggle.com/datasets/datamunge/sign-language-mnist
