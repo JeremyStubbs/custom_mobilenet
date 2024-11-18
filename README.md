@@ -8,6 +8,10 @@ create_model.ipynb walks through training the model from scratch.
 
 Load_model.ipynb allows you to load the pretrained models for immediate use. 
 
+asl_create_image_dir.ipynb and move_images.py create the appropriate directories for training the model   
+
+webcam.py lets you use a saved model on images captured from a webcam every 0.5 seconds    
+
 The saved_model directories contains the pretrained models.
 
 
